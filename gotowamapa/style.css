@@ -135,11 +135,12 @@ button:hover {
 
 /* Dostosowanie dla małych ekranów (telefonów) */
 @media (max-width: 768px) {
-    /* Ukrycie panelu administratora na telefonach */
+    /* Na urządzeniach mobilnych panel administratora będzie widoczny */
     #admin-panel {
-        display: none !important;
+        display: block !important; /* Wymusza wyświetlanie panelu */
     }
 
+    /* Mapa */
     #map {
         margin-top: 20px;
         width: 100vw;
@@ -156,7 +157,7 @@ button:hover {
 @media (max-width: 480px) {
     /* Ukrycie panelu administratora na bardzo małych ekranach */
     #admin-panel {
-        display: none !important;
+        display: block !important; /* Wymusza wyświetlanie panelu */
     }
 
     header button {
